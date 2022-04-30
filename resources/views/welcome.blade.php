@@ -42,9 +42,9 @@
                     @else
                         <a href="{{ route('login') }}" class="nav-link active">Log in</a>
 
-                        @if (Route::has('register'))
+                        {{-- @if (Route::has('register'))
                             <a href="{{ route('register') }}" class="nav-link active ">Register</a>
-                        @endif
+                        @endif --}}
                     @endauth
                 </div>
             @endif
