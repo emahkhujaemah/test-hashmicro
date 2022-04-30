@@ -21,9 +21,9 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($users as $key => $user)
+                        @foreach($users as $user)
                             <tr>
-                                <td>{{$key+1}}</td>
+                                <td>{{$loop->iteration}}</td>
                                 <td>{{$user->name}}</td>
                                 <td>{{$user->email}}</td>
                                 <td>

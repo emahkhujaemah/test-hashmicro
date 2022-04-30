@@ -43,9 +43,11 @@
             @include('adminlte::partials.sidebar.right-sidebar')
         @endif
 
+        <x-notification-component/>
+
     </div>
 
-    <x-notification-component/>
+    
 @stop
 
 @section('adminlte_js')

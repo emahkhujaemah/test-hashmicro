@@ -13,7 +13,27 @@ class KarakterController extends Controller
      */
     public function index()
     {
-        return view('karakter.index');
+
+        $input1 = "ABBCD";
+        $input2 = "Gallant Duct";
+
+        $input1LowerCase = strtolower($input1);
+        $input2LowerCase = strtolower($input2);
+        $char1 = similar_text($input1LowerCase, $input2LowerCase);
+        // echo $char1;
+
+        $char2 = strlen($input1);
+        // echo $char2;
+
+        $sameCharPersen = round($char1/$char2 * 100, 2);
+        // echo "Hasilnya ". $sameCharPersen ."%";
+        
+        return view('karakter.index', [
+            $char1 => 'char1', 
+            $char2 => 'char2',
+            $sameCharPersen => 'sameCharPersen',
+        ]);
+
     }
 
     /**

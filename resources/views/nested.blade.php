@@ -17,7 +17,7 @@
 
             <div class="card-body"> 
                 <div class="row">
-                    <div class="col-md-8 justifiy-content-center">
+                    <div class="col-md-8">
                         <?php 
                         $angka = [
                             [1,2,3],

@@ -36,16 +36,47 @@
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
-                            
-                            
                         <div class="box-footer">
                             <button type="submit" class="btn btn-primary float-right floa">Simpan</button>
                         </div>
-                    </form>        
+                    </form> 
+                </div>
+
+                <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <?php 
+                                    $input1 = "ABBCD";
+                                    $input2 = "Gallant Duct";
+
+                                    $input1LowerCase = strtolower($input1);
+                                    $input2LowerCase = strtolower($input2);
+                                    $char1 = similar_text($input1LowerCase, $input2LowerCase);
+                                ?>
+
+                                <h4>Kalimat 1 : {{$input1}} </h4>
+                                <h4>Kalimat 2 : {{$input2}} </h4>
+                                
+                                <br>
+                                <?php
+                                    $char2 = strlen($input1);
+                                    // echo "Jumlah Huruf Pertama : ".$char2;
+                                ?>
+                                <h5>Jumlah Huruf Pertama : {{$char1}}</h5>
+                                <h5>Jumlah Huruf Pertama : {{$char2}}</h5>
+                                <br>
+                                <?php
+                                    $sameCharPersen = round($char1/$char2 * 100, 2);
+                                    // echo "Hasilnya ". $sameCharPersen ."%";    
+                                ?>
+                                <h6>Hasilnya {{$sameCharPersen}}%</h6>
+                            </div>
+                        </div>
+                        
                 </div>
             
+
 
             </div>
         </div>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NestedController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\KarakterController;
