@@ -241,6 +241,11 @@ return [
 
         // Sidebar items:
         [
+            'text'        => 'Dashboard',
+            'url'         => 'home',
+            'icon'        => 'fas fa-tachometer-alt',
+        ],
+        [
             'text' => 'User',
             'url'  => '/users',
             'icon'  => 'fa fa-users',
