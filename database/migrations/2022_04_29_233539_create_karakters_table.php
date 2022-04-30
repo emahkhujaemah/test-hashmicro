@@ -15,6 +15,8 @@ class CreateKaraktersTable extends Migration
     {
         Schema::create('karakters', function (Blueprint $table) {
             $table->id();
+            $table->string('input1');
+            $table->string('input2');
             $table->timestamps();
         });
     }

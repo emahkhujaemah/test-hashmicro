@@ -8,29 +8,29 @@
 
 @section('content')
     <div class="row">
-        <div class="col-6">
+        <div class="col-12">
             <div class="card">
 
-                <div class="card-body">
-                    <form action="/karakter" method="POST" enctype="multipart/form-data" >
+                {{-- <div class="card-body">
+                    <form action="/santri" method="POST" enctype="multipart/form-data" >
                         @csrf
                         <div class="row">
-                            <div class="col">
+                            <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label for="input1">Input Huruf 1</label>
-                                    <input name="input1" class="form-control" value="{{old('input1')}}"
+                                    <label for="rows">Input Huruf 1</label>
+                                    <input name="rows" class="form-control" value="{{old('rows')}}"
                                     >
                                     <div class="text-danger">
-                                        @error('input1')
+                                        @error('rows')
                                         {{$message}}
                                         @enderror
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="input2">Input Huruf 2</label>
-                                    <input name="input2" class="form-control" value="{{old('input2')}}">
+                                    <label for="columns">Input Huruf 1</label>
+                                    <input name="columns" class="form-control" value="{{old('columns')}}">
                                     <div class="text-danger">
-                                        @error('input2')
+                                        @error('columns')
                                         {{$message}}
                                         @enderror
                                     </div>
@@ -41,10 +41,10 @@
                             
                             
                         <div class="box-footer">
-                            <button type="submit" class="btn btn-primary float-right floa">Simpan</button>
+                        <button type="submit" class="btn btn-primary float-right floa">Simpan</button>
                         </div>
                     </form>        
-                </div>
+                </div> --}}
             
 
             </div>
